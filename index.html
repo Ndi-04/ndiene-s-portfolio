@@ -1,0 +1,623 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ndiene Netshikweta - Portfolio</title>
+    <meta name="description" content="Ndiene Netshikweta - Information Technology Management Student Portfolio" />
+    <meta name="author" content="Ndiene Netshikweta" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="nav">
+        <div class="nav-container">
+            <button id="nav-title" class="nav-title">Ndiene Netshikweta</button>
+            <div class="nav-desktop">
+                <button class="nav-item" data-section="about">
+                    <i class="fas fa-users"></i>
+                    <span>About</span>
+                </button>
+                <button class="nav-item" data-section="objective">
+                    <i class="fas fa-star"></i>
+                    <span>Objective</span>
+                </button>
+                <button class="nav-item" data-section="projects">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Projects</span>
+                </button>
+                <button class="nav-item" data-section="education">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Education</span>
+                </button>
+                <button class="nav-item" data-section="skills">
+                    <i class="fas fa-book"></i>
+                    <span>Skills</span>
+                </button>
+                <button class="nav-item" data-section="competencies">
+                    <i class="fas fa-cogs"></i>
+                    <span>Core Skills</span>
+                </button>
+                <button class="nav-item" data-section="certifications">
+                    <i class="fas fa-award"></i>
+                    <span>Certifications</span>
+                </button>
+                <button class="nav-item" data-section="references">
+                    <i class="fas fa-envelope"></i>
+                    <span>References</span>
+                </button>
+            </div>
+            <button id="mobile-menu-btn" class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="mobile-menu">
+            <button class="mobile-nav-item" data-section="about">
+                <i class="fas fa-users"></i>
+                <span>About</span>
+            </button>
+            <button class="mobile-nav-item" data-section="objective">
+                <i class="fas fa-star"></i>
+                <span>Objective</span>
+            </button>
+            <button class="mobile-nav-item" data-section="projects">
+                <i class="fas fa-briefcase"></i>
+                <span>Projects</span>
+            </button>
+            <button class="mobile-nav-item" data-section="education">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Education</span>
+            </button>
+            <button class="mobile-nav-item" data-section="skills">
+                <i class="fas fa-book"></i>
+                <span>Skills</span>
+            </button>
+            <button class="mobile-nav-item" data-section="competencies">
+                <i class="fas fa-cogs"></i>
+                <span>Core Skills</span>
+            </button>
+            <button class="mobile-nav-item" data-section="certifications">
+                <i class="fas fa-award"></i>
+                <span>Certifications</span>
+            </button>
+            <button class="mobile-nav-item" data-section="references">
+                <i class="fas fa-envelope"></i>
+                <span>References</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="typing-container">
+                <h2 id="typed-text" class="typed-text"></h2><span id="cursor" class="cursor">|</span>
+            </div>
+            
+            <div id="profile-container" class="profile-container">
+                <div class="profile-shadow"></div>
+                <div class="profile-image-container">
+                    <div class="profile-gradient"></div>
+                    <img src="Ndi.jpg" 
+                         alt="Ndiene Netshikweta - Half Body Portrait" 
+                         class="profile-image">
+                    <div class="profile-highlight"></div>
+                </div>
+            </div>
+
+            <div id="hero-info" class="hero-info">
+                <h1 class="hero-name">Ndiene Netshikweta</h1>
+                <p class="hero-title">Diploma in Information Technology Management Student & Aspiring IT Professional</p>
+            </div>
+
+            <div id="contact-info" class="contact-info">
+                <button class="contact-item" onclick="window.location.href='mailto:ndienenetshikweta2004@gmail.com'">
+                    <i class="fas fa-envelope"></i>
+                    <span>ndienenetshikweta2004@gmail.com</span>
+                </button>
+                <div class="contact-item" onclick="window.location.href='tel:+27727364080'">
+                    <i class="fas fa-phone"></i>
+                    <span>+27 72 736 4080</span>
+                </div>
+                <div class="contact-item" onclick="window.open('https://www.google.com/maps?q=40+Crouse+Street+Naturena+2095,+Johannesburg', '_blank')">
+    <i class="fas fa-map-marker-alt"></i>
+    <span>2739 Crouse Street Naturena 2095, Johannesburg</span>
+</div>
+
+            </div>
+
+         <center>   <div id="social-links" class="social-links">
+             <div class="social-buttons">
+    <button class="social-btn" onclick="window.open('https://github.com/Ndi-04', '_blank')">
+                    <i class="fab fa-github"></i>
+                </button>
+         </div>
+
+                    <button class="social-btn" onclick="window.open('https://www.linkedin.com/in/ndiene-netshikweta-2b80a428b', '_blank')">
+                        <i class="fab fa-linkedin"></i>
+                    </button>
+                    <div class="social-buttons">
+    <button class="social-btn" onclick="window.location.href='mailto:ndienenetshikweta2004@gmail.com'">
+        <i class="fas fa-envelope"></i>
+    </button>
+</div>
+
+                </div>
+                <button class="download-cv-btn" onclick="downloadCV()">
+                    <i class="fas fa-download"></i>
+                    <span>Download CV</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="scroll-down" onclick="scrollToSection('about')">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+    </center>
+    <!-- About Section -->
+    <section id="about" class="section gray-bg">
+        <div class="container">
+            <h2 class="section-title scroll-animate">About Me</h2>
+            <div class="card scroll-animate">
+                <p class="scroll-animate">
+                    I'm a passionate third-year Information Technology Management student with a keen interest in bridging the gap between technology and business. My journey in IT has been driven by curiosity and a desire to understand how technology can transform organizations and improve people's lives.
+                </p>
+                <p class="scroll-animate">
+                    Throughout my studies, I've developed a strong foundation in database management, networking, information security, system analysis, and project management. I enjoy working on complex problems and finding innovative solutions that combine technical expertise with strategic thinking.
+                </p>
+                <p class="scroll-animate">
+                    When I'm not studying or working on projects, you can find me exploring new technologies, contributing to open-source projects, or mentoring fellow students. I believe in continuous learning and staying current with industry trends to remain at the forefront of technological advancement.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objective Section -->
+    <section id="objective" class="section black-bg">
+        <div class="container">
+            <h2 class="section-title scroll-animate">Objective</h2>
+            <div class="objective-card scroll-animate">
+                <p>
+                    Dedicated third-year Information Technology Management student with a passion for leveraging 
+                    technology to solve business challenges. Seeking to apply my academic knowledge in database management, 
+                    system analysis, information security, networking, project management, and emerging technologies through internships and entry-level 
+                    positions. Committed to continuous learning and contributing to innovative IT solutions that drive 
+                    organizational success while developing professional expertise in the technology sector.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section white-bg">
+        <div class="container">
+            <h2 class="section-title scroll-animate">Academic Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card scroll-animate">
+                    <h3>Database Management System</h3>
+                    <p>Designed and implemented a comprehensive database for a Library using SQL Server Management Studio</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">SQL Server Management Studio</span>
+                        <span class="tech-tag">Normalization</span>
+                        <span class="tech-tag">ERD Design</span>
+                    </div>
+                   
+                </div>
+                <div class="project-card scroll-animate">
+                    <h3>IT Project Management Case Study</h3>
+                    <p>Analyzed and proposed solutions for a real-world IT implementation project</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">MS Project</span>
+                        <span class="tech-tag">PMBOK</span>
+                        <span class="tech-tag">Risk Analysis</span>
+                        <span class="tech-tag">Gantt Charts</span>
+                    </div>
+                  
+                </div>
+                <div class="project-card scroll-animate">
+                    <h3>Web Development</h3>
+                    <p>Developed a responsive website for a local business using HTML, CSS, and JavaScript</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Responsive Design</span>
+                    </div>
+                    
+                </div>
+                <div class="project-card scroll-animate">
+                    <h3>System Analysis & Design</h3>
+                    <p>Developed system requirements and design documentation for a business process automation</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">UML</span>
+                        <span class="tech-tag">Use Cases</span>
+                        <span class="tech-tag">System Design</span>
+                        <span class="tech-tag">Documentation</span>
+                    </div>
+                   
+                </div>
+                <div class="project-card scroll-animate">
+                    <h3>Networking</h3>
+                    <p>Designed and implemented a network infrastructure for a small business</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Network Design</span>
+                        <span class="tech-tag">Implementation</span>
+                        <span class="tech-tag">IP Addressing</span>
+                        <span class="tech-tag">Networking</span>
+                    </div>
+                    
+                </div>
+
+
+                <div class="project-card scroll-animate">
+                    <h3>Help Desk</h3>
+                    <p>Provided technical support and troubleshooting for end-users in a corporate environment</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Technical Support</span>
+                        <span class="tech-tag">Troubleshooting</span>
+                        <span class="tech-tag">Customer Service</span>
+                        <span class="tech-tag">IT Support</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section gray-bg">
+        <div class="container">
+            <h2 class="section-title scroll-animate">Education</h2>
+            <div class="education-list">
+                <div class="education-item scroll-animate">
+                    <div class="education-header">
+                        <h3>Diploma in Information Technology Management</h3>
+                        <span class="education-year">2022-2025 (Current - 3rd Year)</span>
+                    </div>
+                    <p class="education-school">IIE Rosebank College</p>
+                    <p class="education-details">Focus on Database Management, System Analysis & Design, Project Management, Network Administration, Information Security and Business Process Optimization. </p>
+                </div>
+                <div class="education-item scroll-animate">
+                    <div class="education-header">
+                        <h3>Grade 12 Diploma</h3>
+                        <span class="education-year">2018-2022</span>
+                    </div>
+                    <p class="education-school">Hoërskool President High School</p>
+                    <p class="education-details">Diploma Pass</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section black-bg">
+        <div class="container">
+            <h2 class="section-title scroll-animate">Language Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item scroll-animate">
+                    <div class="skill-header">
+                        <span class="skill-name">English</span>
+                        <span class="skill-level">Native</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-percentage="100"></div>
+                    </div>
+                </div>
+                <div class="skill-item scroll-animate">
+                    <div class="skill-header">
+                        <span class="skill-name">Isizulu</span>
+                        <span class="skill-level">Fluent</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-percentage="90"></div>
+                    </div>
+                </div>
+                <div class="skill-item scroll-animate">
+                    <div class="skill-header">
+                        <span class="skill-name">Sesotho</span>
+                        <span class="skill-level">Intermediate</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-percentage="70"></div>
+                    </div>
+                </div>
+                <div class="skill-item scroll-animate">
+                    <div class="skill-header">
+                        <span class="skill-name">Afrikaans</span>
+                        <span class="skill-level">Basic</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-percentage="30"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competencies Section -->
+    <section id="competencies" class="section white-bg">
+        <div class="container">
+            <h2 class="section-title scroll-animate">Core Competencies</h2>
+            <div class="competencies-grid">
+                <div class="competency-card scroll-animate">
+                    <div class="competency-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Technical Skills</h3>
+                    </div>
+                    <div class="competency-skills">
+                        <div class="competency-skill">
+                            <div class="skill-header">
+                                <span>Database Design & SQL</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="85"></div>
+                            </div>
+                        </div>
+                        <div class="competency-skill">
+                            <div class="skill-header">
+                                <span>System Analysis</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="80"></div>
+                            </div>
+                        </div>
+                        <div class="competency-skill">
+                            <div class="skill-header">
+                                <span>Web Development</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="85"></div>
+                            </div>
+                        </div>
+                        <div class="competency-skill">
+                            <div class="skill-header">
+                                <span>Network Fundamentals</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="80"></div>
+                            </div>
+                        </div>
+                        <div class="competency-skill">
+                            <div class="skill-header">
+                                <span>Information Security</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="90"></div>
+                            </div>
+                        </div>
+                        <div class="competency-skill">
+                            <div class="skill-header">
+                                <span>Data Analysis</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="competency-card scroll-animate">
+                    <div class="competency-header">
+                        <i class="fas fa-users"></i>
+                        <h3>Management Skills</h3>
+                    </div>
+                    <div class="competency-skills">
+                        <div class="competency-skill">
+                            <div class="skill-header">
+                                <span>Project Management</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="80"></div>
+                            </div>
+                        </div>
+                        <div class="competency-skill">
+                            <div class="skill-header">
+                                <span>Team Leadership</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="90"></div>
+                            </div>
+                        </div>
+                        <div class="competency-skill">
+                            <div class="skill-header">
+                                <span>Risk Assessment</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="85"></div>
+                            </div>
+                        </div>
+                        <div class="competency-skill">
+                            <div class="skill-header">
+                                <span>Process Improvement</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="75"></div>
+                            </div>
+                        </div>
+                        <div class="competency-skill">
+                            <div class="skill-header">
+                                <span>Strategic Planning</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="competency-card scroll-animate">
+                    <div class="competency-header">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Tools & Software</h3>
+                    </div>
+                    <div class="competency-skills">
+                        <div class="competency-skill">
+                            <div class="skill-header">
+                                <span>MS Office Suite</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="95"></div>
+                            </div>
+                        </div>
+                        <div class="competency-skill">
+                            <div class="skill-header">
+                                <span>MS Project</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="80"></div>
+                            </div>
+                        </div>
+                        <div class="competency-skill">
+                            <div class="skill-header">
+                                <span>SQL Server Management Studio</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="95"></div>
+                            </div>
+                        </div>
+                        <div class="competency-skill">
+                            <div class="skill-header">
+                                <span>Visio</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="75"></div>
+                            </div>
+                        </div>
+                        <div class="competency-skill">
+                            <div class="skill-header">
+                                <span>Github</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section gray-bg">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-award scroll-animate"></i>
+                <h2 class="section-title scroll-animate">Certifications</h2>
+            </div>
+            <div class="certification-card scroll-animate">
+                <div class="certification-header">
+                    <h3>Google Data Analytics Professional Certificate</h3>
+                    <span class="certification-year">2025</span>
+                </div>
+                <p class="certification-issuer">Google Career Certificates</p>
+                <p class="certification-description">
+                    Comprehensive program covering data analysis fundamentals, data cleaning, visualization, and statistical analysis using tools like Google Sheets, SQL, Tableau, and R programming. Gained hands-on experience with real-world data analysis projects and developed skills in data-driven decision making.
+                </p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- References Section -->
+    <section id="references" class="section white-bg">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-envelope scroll-animate"></i>
+                <h2 class="section-title scroll-animate">References</h2>
+            </div>
+            <div class="references-grid">
+                <div class="reference-card scroll-animate">
+                    <h3>Mr R Siphugu</h3>
+                    <p class="reference-title">Teacher</p>
+                    <p class="reference-company">Hoërskool President High School</p>
+                    <div class="reference-contact">
+                    
+                                                    </button>
+                        <div class="contact-info">
+                            <i class="fas fa-phone"></i>
+                            <span>+27 (0) 72 882 2741</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reference-card scroll-animate">
+                    <h3>Velly Maatjie</h3>
+                    <p class="reference-title">Database Instructor</p>
+                    <p class="reference-company">IIE Rosebank College</p>
+                    <div class="reference-contact">
+                        <button class="contact-link" onclick="openReferenceEmail('maatjievk@gmail.com')">
+                            <i class="fas fa-envelope"></i>
+                            <span>maatjievk@gmail.com</span>
+                        </button>
+                        <div class="contact-info">
+                            <i class="fas fa-phone"></i>
+                            <span>+27 (0) 72 163 5940</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+  <h2>Send Me a Message. Let's Connect</h2>
+  <form action="https://formspree.io/f/mdkzqroz" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" required>
+
+    <label for="email">Your Email:</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="message">Message:</label>
+    <textarea name="message" id="message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            
+                
+                </button>
+                <button class="social-btn" onclick="window.open('https://github.com/Ndi-04', '_blank')">
+                    <i class="fab fa-github"></i>
+                </button>|
+                <button class="social-btn" onclick="window.open('https://www.linkedin.com/in/ndiene-netshikweta-2b80a428b', '_blank')">
+                        <i class="fab fa-linkedin"></i>
+                    </button>|
+                    
+                    <button class="social-btn" onclick="window.location.href='mailto:ndienenetshikweta2004@gmail.com'">
+                            <i class="fas fa-envelope"></i>
+    </button>
+</div>
+
+                © 2024 Ndiene Netshikweta. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
