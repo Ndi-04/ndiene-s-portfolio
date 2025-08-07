@@ -237,7 +237,7 @@ function downloadCV() {
 
 function downloadCV() {
     const link = document.createElement('a');
-    link.href = 'Ndiene_Netshikweta_cv.pdf'; // Ensure Ndiene_Netshikweta_CV.pdf is in the same folder as the HTML
+    link.href = 'Ndiene_Netshikweta_cv.pdf'; // Download CV
     link.download = 'Ndiene_Netshikweta_cv.pdf';
     document.body.appendChild(link);
     link.click();
@@ -257,3 +257,4 @@ document.addEventListener('click', function(e) {
         scrollToSection(targetId);
     }
 });
+
